@@ -1,3 +1,5 @@
+require 'pry'
+
 class MusicLibraryController
   attr_accessor :path
 
@@ -65,6 +67,7 @@ class MusicLibraryController
        artists.songs.sort do |a, b|
          a.name <=> b.name.each_with_index do |s, i|
            puts "#{i+1}. #{s.name} - #{s.genre.name}"
+           binding.pry
          end
        end
      end
