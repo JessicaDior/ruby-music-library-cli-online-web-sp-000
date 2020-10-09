@@ -33,6 +33,7 @@ class MusicLibraryController
          list_genres
        elsif input == "play song"
          play_song
+       end
             end
           end
         end
