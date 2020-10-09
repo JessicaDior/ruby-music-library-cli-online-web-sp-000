@@ -90,13 +90,13 @@ class MusicLibraryController
      list_songs
      input = gets.strip.to_i
      if input > 0 && input <= Song.all.length
-       song_list = Song.all.sort do |a, b| 
+       song_list = Song.all.sort do |a, b|
          a.name <=> b.name
          song = songlist[input-1]
          puts "Now playing #{song.name} by #{song.artist.name}"
        end
      end
-       
+
    end
 
 
