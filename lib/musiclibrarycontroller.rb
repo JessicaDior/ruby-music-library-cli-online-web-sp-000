@@ -21,18 +21,17 @@ class MusicLibraryController
        puts "To quit, enter 'exit'."
        puts "What would you like to do?"
 
-       case input
-       when "list songs"
+       if input == "list songs"
          list_songs
-       when "list artists"
+       elsif input == "list artists"
          list_artists
-       when "list genres"
+       elsif input == "list genres"
          list_genres
-       when "list artist"
+       elsif input == "list artist"
          list_artists
-       when "list genre"
+       elsif input == "list genre"
          list_genres
-       when "play song"
+       elsif input == "play song"
          play_song
        end
      end
